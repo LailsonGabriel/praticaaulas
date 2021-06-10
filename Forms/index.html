@@ -5,25 +5,30 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <script src="jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+  <h1 class="display-4 text-muted">Form da Aula 6.1</h1>
   <form action="" method="GET">
-    <label for="email">
-      <input type="email" id="email" value="" required placeholder="Digite seu email" autocomplete="off" autofocus>
+  <div class="form-group">
+    <label for="email">E-mail:
+      <input class="form-control" type="email" name="email" id="email" value="" required placeholder="Digite seu email" autocomplete="off" autofocus>
     </label>
-    <label for="senha">
-      <br>
-      <br>
-      <input type="password" id="senha" required placeholder="Digite sua senha">
+  </div>
+  <div class="form-group">
+      <label for="pass">Password:
+      <input class="form-control" type="password" name="senha" id="pass" required placeholder="Digite sua senha">
     </label>
-    <br>
-    <br>
+  </div>
+  <div class="form-group">
     <label for="lembrar">
       Lembre-me<input type="checkbox" id="lembrar">
     </label>
-    <br>
-    <br>
-    <button type="submit">Entrar</button>
+  </div>
+
+    <button type="submit" class="btn btn-success">Entrar</button>
   </form>
 </body>
 </html>
