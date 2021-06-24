@@ -11,24 +11,15 @@
 </head>
 <body>
   <h1 class="display-4 text-muted">Form da Aula 6.1</h1>
-  <form action="" method="GET">
-  <div class="form-group">
-    <label for="email">E-mail:
-      <input class="form-control" type="email" name="email" id="email" value="" required placeholder="Digite seu email" autocomplete="off" autofocus>
-    </label>
-  </div>
-  <div class="form-group">
-      <label for="pass">Password:
-      <input class="form-control" type="password" name="senha" id="pass" required placeholder="Digite sua senha">
-    </label>
-  </div>
-  <div class="form-group">
-    <label for="lembrar">
-      Lembre-me<input type="checkbox" id="lembrar">
-    </label>
-  </div>
-
-    <button type="submit" class="btn btn-success">Entrar</button>
+  <form action="#" class="js-form form">
+      <label for="name">Enter your name</label>
+      <input type="text" class="form__input form-control" placeholder="Enter your name" autocomplete="off" data-validate-field="name" name="name" id="name">
+      <label for="email">Enter your email</label>
+      <input type="email" class="form__input form-control" placeholder="Enter your email" autocomplete="off" data-validate-field="email" name="email" id="email">
+      <button id="submit" class="form__btn btn btn-primary">SUBMIT</button>
   </form>
+  
+  <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
